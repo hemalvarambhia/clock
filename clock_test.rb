@@ -28,7 +28,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_sixty_minutes_is_next_hour
-    skip
     assert_equal '02:00', Clock.at(1, 60).to_s
   end
 

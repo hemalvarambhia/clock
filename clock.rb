@@ -2,6 +2,6 @@ Clock = Class.new
 
 class Clock
   def self.at(hour, minute)
-    '08:00'
+    '%02d:%02d' % [hour, minute]
   end
 end

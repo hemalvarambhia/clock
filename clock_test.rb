@@ -20,12 +20,10 @@ class ClockTest < Minitest::Test
   end
 
   def test_hour_rolls_over
-    skip
     assert_equal '01:00', Clock.at(25, 0).to_s
   end
 
   def test_hour_rolls_over_continuously
-    skip
     assert_equal '04:00', Clock.at(100, 0).to_s
   end
 

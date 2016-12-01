@@ -26,6 +26,6 @@ class Clock
   end
 
   def ==(other)
-    true
+    minute == other.minute
   end
 end

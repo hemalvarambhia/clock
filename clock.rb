@@ -16,7 +16,7 @@ class Clock
   end
 
   def +(minute)
-    @minute = 3
+    @minute += minute
 
     self
   end

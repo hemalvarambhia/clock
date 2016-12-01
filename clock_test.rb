@@ -100,7 +100,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_add_more_than_two_hours_with_carry
-    skip
     assert_equal '03:25', (Clock.at(0, 45) + 160).to_s
   end
 

@@ -160,7 +160,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_clocks_an_hour_apart
-    skip
     clock1 = Clock.at(14, 37)
     clock2 = Clock.at(15, 37)
     refute clock1 == clock2

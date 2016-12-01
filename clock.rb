@@ -1,7 +1,17 @@
 Clock = Class.new
 
 class Clock
+  attr_reader :hour, :minute
   def self.at(hour, minute)
-    '%02d:%02d' % [((hour + (minute / 60)) % 24), minute % 60 ]
+    Clock.new(hour, minute)
+  end
+
+  def initialize(hr, min)
+    @hour = ((hr + (min / 60)) % 24)
+    @minute = min % 60
+  end
+
+  def to_s
+    '%02d:%02d' % [ hour, minute ]
   end
 end

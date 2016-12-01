@@ -80,7 +80,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_negative_hour_and_minutes_both_roll_over_continuously
-    skip
     assert_equal '22:10', Clock.at(-121, -5810).to_s
   end
 

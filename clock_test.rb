@@ -64,7 +64,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_negative_minutes
-    skip
     assert_equal '00:20', Clock.at(1, -40).to_s
   end
 

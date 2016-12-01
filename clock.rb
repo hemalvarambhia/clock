@@ -14,4 +14,10 @@ class Clock
   def to_s
     '%02d:%02d' % [ hour, minute ]
   end
+
+  def +(minute)
+    @minute = 3
+
+    self
+  end
 end

@@ -6,13 +6,17 @@ class Clock
     Clock.new(hour, minute)
   end
 
-  def initialize(hr, min)
-    @hour = ((hr + (min / 60)) % 24)
-    @minute = min % 60
+  def initialize(hour, minute)
+    @hour = hour
+    @minute = minute
   end
 
   def to_s
-    '%02d:%02d' % [ hour, minute ]
+    '%02d:%02d' %
+      [
+        ((hour + (minute / 60)) % 24),
+        minute % 60
+      ]
   end
 
   def +(minute)

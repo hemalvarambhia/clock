@@ -26,7 +26,6 @@ class Clock
   end
 
   def ==(other)
-    hour == other.hour &&
-      minute == other.minute
+    to_s == other.to_s
   end
 end

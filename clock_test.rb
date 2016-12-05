@@ -208,7 +208,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_clocks_with_negative_minute
-    skip
     clock1 = Clock.at(2, 40)
     clock2 = Clock.at(3, -20)
     assert clock1 == clock2

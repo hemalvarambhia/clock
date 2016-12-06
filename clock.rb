@@ -9,11 +9,7 @@ class Clock
   end
 
   def to_s
-    '%02d:%02d' %
-      [
-        (minute / 60) % 24,
-        minute % 60
-      ]
+    '%02d:%02d' % [ hour % 24, minute % 60 ]
   end
 
   def +(minute)
@@ -24,6 +20,12 @@ class Clock
 
   def ==(other)
     to_s == other.to_s
+  end
+
+  private
+
+  def hour
+    minute / 60
   end
 end
 

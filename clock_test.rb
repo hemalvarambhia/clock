@@ -232,7 +232,6 @@ class ClockTest < Minitest::Test
   end
 
   def test_clocks_with_negative_hours_and_minutes_that_wrap
-    skip
     clock1 = Clock.at(18, 7)
     clock2 = Clock.at(-54, -11_513)
     assert clock1 == clock2

@@ -29,3 +29,7 @@ class Clock
     to_s == other.to_s
   end
 end
+
+module BookKeeping
+  VERSION = 2
+end

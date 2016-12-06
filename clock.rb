@@ -1,5 +1,3 @@
-Clock = Class.new
-
 class Clock
   attr_reader :hour, :minute
   def self.at(hour, minute)

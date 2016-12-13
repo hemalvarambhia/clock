@@ -29,7 +29,7 @@ class Clock
   end
 
   def hour_hand
-     hour % 24
+    hour % 24
   end
 
   def minute_hand

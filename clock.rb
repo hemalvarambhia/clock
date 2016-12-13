@@ -9,7 +9,7 @@ class Clock
   end
 
   def to_s
-    '%02d:%02d' % [ hour % 24, minute % 60 ]
+    '%02d:%02d' % [ hour_hand, minute_hand ]
   end
 
   def +(minute)
@@ -26,6 +26,14 @@ class Clock
 
   def hour
     minute / 60
+  end
+
+  def hour_hand
+     hour % 24
+  end
+
+  def minute_hand
+    minute % 60
   end
 end
 

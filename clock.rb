@@ -1,11 +1,11 @@
 class Clock
-  attr_reader :minute
+  attr_reader :minutes
   def self.at(hour, minute)
     Clock.new(minute + (60 * hour))
   end
 
   def initialize(minute)
-    @minute = minute
+    @minutes = minute
   end
 
   def to_s
@@ -13,7 +13,7 @@ class Clock
   end
 
   def +(minute)
-    @minute += minute
+    @minutes += minute
 
     self
   end
@@ -25,7 +25,7 @@ class Clock
   private
 
   def hour
-    minute / 60
+    minutes / 60
   end
 
   def hour_hand
@@ -33,7 +33,7 @@ class Clock
   end
 
   def minute_hand
-    minute % 60
+    minutes % 60
   end
 end
 
